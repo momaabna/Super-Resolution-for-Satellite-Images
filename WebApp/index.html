@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>WebApp</title>
+        <!--bootstrap 5 stable-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+        <!--style.css-->
+        <link rel="stylesheet" href="style.css">
+        <!--onnx-->
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    </head>
+    <body>
+        <!--navbar-->
+       
+        
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                <!-- logo-->
+  <a class="navbar-brand" href="#" style="color: black;">
+      <img src="logo.png" alt="logo" width="30" height="30" class="d-inline-block align-top">
+      Super Resolution for Satellite Images
+    </a>
+    <!-- navbar elements-->
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="color: black;" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="models.html">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="python.html">Python</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " style="color: black;" href="webapp.html">WebApp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="about.html">About</a>
+        </li>
+        </ul>
+        </div>
+
+       
+
+    
+    <!-- navbar collapse-->
+
+
+    <!-- navbar toggler-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- navbar collapse-->
+
+</nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-12">
+                            <h1>Super Resolution for Satellite Images</h1>
+                           <p>
+                            Satellite image super resolution is a project that aims to simplify satellite images Super-Resolution using deep learning. The project is divided into three parts:
+                            <ul>
+                                <li>Python : Script to convert the model to onnx format. Script to run the model satellite images after dividing them into tiles.</li>
+                                <li>WebApp : Webapp to run the model on satellite images in the browser.</li>
+                                <li>Models : The models used in the project in onnx format.</li>
+                            </ul>
+                           </p>
+                            <p>
+                            The models were converted to onnx format and then used in the webapp. The models weights are based on the original implementation for the paper entitled "A Comparative Study on CNN-Based Single-Image Super-Resolution Techniques for Satellite Images" downloaded from  <a href="https://github.com/farahmand-m/satellite-image-super-resolution">here</a>.
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-12">
+                            <h2>WebApp</h2>
+                            <p>
+                                The webapp is built using html, css, javascript and bootstrap. The model is run in the browser using onnxruntime-web. The webapp is hosted on github pages.
+                            </p>
+                            <p>
+                                The webapp can be accessed <a href="https://momaabna.github.io/Super-Resolution-for-Satellite-Images/">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-12">
+                            <h2>Examples</h2>
+                            <p>
+                                The following are some examples of the webapp.
+                            </p>
+                           <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                <th scope="col">Input</th>
+                                <th scope="col">Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><img src="examples/set001.jpeg" alt="input" width="300" height="300"></td>
+                                <td><img src="examples/set001_out.jpeg" alt="output" width="300" height="300"></td>
+                                </tr>
+                                <tr>
+                                <td><img src="examples/1_LR.jpg" alt="input" width="300" height="300"></td>
+                                <td><img src="examples/1_LR_out.png" alt="output" width="300" height="300"></td>
+                            </tbody>
+                            </table>
+
+                        
+                            
+                        
+                 
+                </div>
+
+                </div>
+            </div>
+
+        <!--bootstrap 5-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+        <!--main.js-->
+        <script src="main.js"></script>
+    </body>
+</html>
