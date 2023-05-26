@@ -15,8 +15,8 @@ The webapp can be accessed <a href="https://momaabna.github.io/Super-Resolution-
 
 ## Python Script Usage
 
-'''
+```
+
  python3 SI_super_resolution.py --model models/RDN_model_256.onnx --image ../set001.jpeg --scale 4 --input_size 256
 
-
-'''
+```
