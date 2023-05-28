@@ -11,7 +11,7 @@ The models were converted to onnx format and then used in the webapp. The models
 
  ## WebApp
 The webapp is built using html, css, javascript and bootstrap. The model is run in the browser using onnxruntime-web. The webapp is hosted on github pages.
-The webapp can be accessed <a href="https://momaabna.github.io/Super-Resolution-for-Satellite-Images/">here</a>.
+The webapp can be accessed <a href="https://litcode-it.com/apps/sisr/">here</a>.
 
 ## Python Script Usage
 
@@ -20,3 +20,6 @@ The webapp can be accessed <a href="https://momaabna.github.io/Super-Resolution-
  python3 SI_super_resolution.py --model models/RDN_model_256.onnx --image ../set001.jpeg --scale 4 --input_size 256
 
 ```
+
+## Examples 
+

@@ -3,7 +3,7 @@ const size = 64;
 const scale = 4;
 var file_width = 0;
 var file_height = 0;
-const num_threads = 8;
+const num_threads = 4;
 // Load the ORT model
 var  modelPath ='models/RDN_model_64_X4_O9.onnx';
 var options = {executionProviders: ['wasm']};
@@ -16,9 +16,11 @@ progress_bar.style.width = "0%";
 progress_text.innerHTML = "0% loading model...";
 var loadingModelPromise = ort.InferenceSession.create(modelPath,options).then((session) => {
     console.log('model loaded');
+    //session.intra_op_num_threads = num_threads;
     progress_text.innerHTML = "100% model loaded";
     progress_bar.style.width = "100%";
     window.session = session;
+
     //window.session.num_threads = num_threads;
     //window.session.optimized = true;
     //use webgl backend

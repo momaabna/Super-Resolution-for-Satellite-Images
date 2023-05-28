@@ -1,8 +1,10 @@
 <html>
     <head>
-        <title>WebApp</title>
+        <title>Satellite Image Super Resolution</title>
         <!--bootstrap 5 stable-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+        <!--bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!--style.css-->
         <link rel="stylesheet" href="style.css">
         <!--onnx-->
@@ -29,13 +31,13 @@
           <a class="nav-link" style="color: black;" href="models.html">Models</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: black;" href="python.html">Python</a>
+          <a class="nav-link" style="color: black;" href="https://github.com/momaabna/Super-Resolution-for-Satellite-Images" >Python</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " style="color: black;" href="webapp.html">WebApp</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: black;" href="about.html">About</a>
+          <a class="nav-link" style="color: black;" href="https://momaabna.github.io">Author</a>
         </li>
         </ul>
         </div>
@@ -80,8 +82,18 @@
                                 The webapp is built using html, css, javascript and bootstrap. The model is run in the browser using onnxruntime-web. The webapp is hosted on github pages.
                             </p>
                             <p>
-                                The webapp can be accessed <a href="https://momaabna.github.io/Super-Resolution-for-Satellite-Images/">here</a>.
+                                The webapp can be accessed <a href="https://litcode-it.com/apps/sisr/">here</a>.
                             </p>
+                            <!-- try webapp button-->
+                            <div class="row">
+                                <div class="col-12" style="text-align: center;">
+                                    <button type="button" class="btn btn-secondary" onclick="window.open('https://litcode-it.com/apps/sisr/webapp.html', '_blank')" style="margin-top: 20px;">
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                        Try WebApp
+                                    </button>
+                                </div>
+
+                            </div>   
                         </div>
                     </div>
                     <div class="row" style="margin-top: 20px;">
@@ -116,6 +128,17 @@
 
                 </div>
             </div>
+            <!--footer -->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <p>
+                           Hosted by <a href="https://litcode-it.com" style="color: black;">LitCode</a> 
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
 
         <!--bootstrap 5-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
