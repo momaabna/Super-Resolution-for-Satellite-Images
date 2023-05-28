@@ -21,11 +21,12 @@ The webapp can be accessed <a href="https://litcode-it.com/apps/sisr/">here</a>.
 
 ```
 
+## Available models
+[+] RDN (256) X4 .
+[+] RDN (64) X4 .
 
 
-
-
-# Resources
+## Resources
 
 [1]  <a href="https://github.com/farahmand-m/satellite-image-super-resolution">A Comparative Study on CNN-Based Single-Image Super-Resolution Techniques for Satellite Images</a>.
 
