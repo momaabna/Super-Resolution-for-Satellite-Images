@@ -27,5 +27,6 @@ The webapp can be accessed <a href="https://litcode-it.com/apps/sisr/">here</a>.
 
 # Resources
 
-[1]  <a href="https://github.com/farahmand-m/satellite-image-super-resolution">A Comparative Study on CNN-Based Single-Image Super-Resolution Techniques for Satellite Images</a>
-[2] <a href="https://www.kaggle.com/c/draper-satellite-image-chronology/data">Draper Satellite Image </a>
+[1]  <a href="https://github.com/farahmand-m/satellite-image-super-resolution">A Comparative Study on CNN-Based Single-Image Super-Resolution Techniques for Satellite Images</a>.
+
+[2] <a href="https://www.kaggle.com/c/draper-satellite-image-chronology/data">Draper Satellite Image </a>.
